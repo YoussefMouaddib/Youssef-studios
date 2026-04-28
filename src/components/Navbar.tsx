@@ -40,12 +40,12 @@ export default function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10 h-16 md:h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="relative w-9 h-9 rounded-xl overflow-hidden bg-gradient-to-br from-gold-500 to-gold-600 flex items-center justify-center font-display text-ink-950 text-lg font-semibold shadow-glow">
+          <div className="relative w-9 h-9 rounded-xl overflow-hidden bg-gradient-to-br from-azure-500 to-azure-600 flex items-center justify-center font-display text-ink-950 text-lg font-semibold shadow-glow">
             Y
           </div>
           <div className="leading-tight">
             <div className="font-display text-base md:text-lg tracking-tight">
-              Youssef <span className="text-gold-400">Studio</span>
+              Youssef <span className="text-azure-400">Studio</span>
             </div>
             <div className="text-[10px] uppercase tracking-[0.25em] text-white/50">
               Web · Booking · AI
@@ -71,7 +71,7 @@ export default function Navbar() {
                   {isActive && (
                     <motion.span
                       layoutId="nav-underline"
-                      className="absolute left-3 right-3 -bottom-0.5 h-px bg-gold-400"
+                      className="absolute left-3 right-3 -bottom-0.5 h-px bg-azure-400"
                     />
                   )}
                 </>

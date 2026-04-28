@@ -43,7 +43,7 @@ export default function Reviews() {
           >
             <div className="eyebrow">Reviews</div>
             <h1 className="mt-3 h-display text-5xl md:text-6xl lg:text-7xl">
-              Real owners. <span className="text-gold-400 italic">Real results.</span>
+              Real owners. <span className="text-azure-400 italic">Real results.</span>
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-white/70 text-lg">
               The work speaks for itself — but the people who hired me say it
@@ -54,7 +54,7 @@ export default function Reviews() {
             <div className="mt-10 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 backdrop-blur-md px-5 py-2.5">
               <div className="flex">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} size={16} className="fill-gold-400 text-gold-400" />
+                  <Star key={i} size={16} className="fill-azure-400 text-azure-400" />
                 ))}
               </div>
               <span className="text-sm text-white/80">5.0 average across all client work</span>
@@ -75,17 +75,17 @@ export default function Reviews() {
                 transition={{ duration: 0.7, delay: i * 0.1 }}
                 className="relative glass-card p-8 flex flex-col"
               >
-                <Quote className="text-gold-400/40 absolute top-6 right-6" size={36} />
+                <Quote className="text-azure-400/40 absolute top-6 right-6" size={36} />
                 <div className="flex gap-0.5">
                   {Array.from({ length: r.stars }).map((_, idx) => (
-                    <Star key={idx} size={14} className="fill-gold-400 text-gold-400" />
+                    <Star key={idx} size={14} className="fill-azure-400 text-azure-400" />
                   ))}
                 </div>
                 <p className="mt-5 text-white/85 leading-relaxed text-[15px]">
                   "{r.body}"
                 </p>
                 <div className="mt-8 pt-6 border-t border-white/10 flex items-center gap-4">
-                  <div className="w-11 h-11 rounded-full bg-gradient-to-br from-gold-500 to-gold-600 flex items-center justify-center font-display text-ink-950 text-sm font-semibold">
+                  <div className="w-11 h-11 rounded-full bg-gradient-to-br from-azure-500 to-azure-600 flex items-center justify-center font-display text-ink-950 text-sm font-semibold">
                     {r.initials}
                   </div>
                   <div>
@@ -93,7 +93,7 @@ export default function Reviews() {
                     <div className="text-white/55 text-xs">{r.role}</div>
                   </div>
                 </div>
-                <div className="mt-4 inline-flex self-start items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-gold-400/90 bg-gold-400/10 border border-gold-400/20 rounded-full px-3 py-1">
+                <div className="mt-4 inline-flex self-start items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-azure-400/90 bg-azure-400/10 border border-azure-400/20 rounded-full px-3 py-1">
                   {r.package}
                 </div>
               </motion.article>
@@ -108,7 +108,7 @@ export default function Reviews() {
           <div className="glass-card p-10 md:p-14 text-center">
             <div className="eyebrow">Built on trust</div>
             <h2 className="mt-3 h-display text-3xl md:text-5xl">
-              Premium isn't the price tag. <span className="text-gold-400 italic">It's the relationship.</span>
+              Premium isn't the price tag. <span className="text-azure-400 italic">It's the relationship.</span>
             </h2>
             <p className="mt-5 max-w-2xl mx-auto text-white/70">
               Every client gets my personal cell. Every project gets a real

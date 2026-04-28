@@ -57,7 +57,7 @@ export default function VideoBackground({
         }}
       />
 
-      {/* Subtle gold vignette */}
+      {/* Subtle accent vignette */}
       <div className="absolute inset-0 bg-radial-fade opacity-60 mix-blend-screen pointer-events-none" />
 
       <style>{`

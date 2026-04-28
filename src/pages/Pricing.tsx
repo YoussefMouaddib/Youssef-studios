@@ -65,7 +65,7 @@ export default function Pricing() {
           >
             <div className="eyebrow">Pricing</div>
             <h1 className="mt-3 h-display text-5xl md:text-6xl lg:text-7xl">
-              Simple pricing. <span className="text-gold-400 italic">Premium results.</span>
+              Simple pricing. <span className="text-azure-400 italic">Premium results.</span>
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-white/70 text-lg leading-relaxed">
               One-time flat fees. No retainers, no surprises. Pick the package
@@ -88,12 +88,12 @@ export default function Pricing() {
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 className={`relative glass-card p-8 flex flex-col ${
                   t.popular
-                    ? "border-gold-500/40 shadow-glow lg:scale-[1.04] lg:-mt-2"
+                    ? "border-azure-500/40 shadow-glow lg:scale-[1.04] lg:-mt-2"
                     : ""
                 }`}
               >
                 {t.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1.5 rounded-full bg-gold-500 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-ink-950">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1.5 rounded-full bg-azure-500 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-ink-950">
                     <Sparkles size={12} /> Most Popular
                   </div>
                 )}
@@ -113,7 +113,7 @@ export default function Pricing() {
                     <li key={f} className="flex gap-3 text-sm">
                       <span
                         className={`mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full ${
-                          t.popular ? "bg-gold-500/20 text-gold-400" : "bg-white/10 text-white/80"
+                          t.popular ? "bg-azure-500/20 text-azure-400" : "bg-white/10 text-white/80"
                         }`}
                       >
                         <Check size={12} />
@@ -140,7 +140,7 @@ export default function Pricing() {
             transition={{ duration: 0.8 }}
             className="mt-16 text-center text-white/55 text-sm"
           >
-            Not sure which tier? <Link to="/contact" className="text-gold-400 hover:text-gold-300">Tell me about your business</Link> — I'll recommend the right fit.
+            Not sure which tier? <Link to="/contact" className="text-azure-400 hover:text-azure-300">Tell me about your business</Link> — I'll recommend the right fit.
           </motion.div>
         </div>
       </section>
@@ -155,7 +155,7 @@ export default function Pricing() {
               { title: "You own everything", body: "Domain, code, content. No platform lock-in. Take it with you, always." },
             ].map((b) => (
               <div key={b.title} className="glass-card p-7">
-                <div className="font-display text-2xl text-gold-400">{b.title}</div>
+                <div className="font-display text-2xl text-azure-400">{b.title}</div>
                 <p className="mt-3 text-white/70 text-sm leading-relaxed">{b.body}</p>
               </div>
             ))}

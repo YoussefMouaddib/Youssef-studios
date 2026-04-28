@@ -12,7 +12,7 @@ export default function FloatingCTA() {
     >
       <Link
         to="/contact"
-        className="group inline-flex items-center gap-2 rounded-full bg-gold-500 px-5 py-3 text-sm font-semibold text-ink-950 shadow-glow hover:bg-gold-400 transition-all hover:scale-105"
+        className="group inline-flex items-center gap-2 rounded-full bg-azure-500 px-5 py-3 text-sm font-semibold text-ink-950 shadow-glow hover:bg-azure-400 transition-all hover:scale-105"
       >
         <Sparkles size={16} className="group-hover:rotate-12 transition-transform" />
         Get a Free Quote

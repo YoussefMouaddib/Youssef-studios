@@ -46,7 +46,7 @@ export default function Portfolio() {
           >
             <div className="eyebrow">Portfolio</div>
             <h1 className="mt-3 h-display text-5xl md:text-6xl lg:text-7xl">
-              Websites built to <span className="text-gold-400 italic">convert.</span>
+              Websites built to <span className="text-azure-400 italic">convert.</span>
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-white/70 text-lg">
               A look at recent work — three real industries, three different
@@ -99,7 +99,7 @@ export default function Portfolio() {
       <section className="relative py-24">
         <div className="mx-auto max-w-5xl px-6 lg:px-10 text-center">
           <h2 className="h-display text-4xl md:text-5xl">
-            Built to <span className="text-gold-400 italic">convert visitors into customers.</span>
+            Built to <span className="text-azure-400 italic">convert visitors into customers.</span>
           </h2>
           <p className="mt-5 text-white/70 max-w-xl mx-auto">
             Every demo is hand-coded for one outcome — a phone call, a booking,

@@ -10,27 +10,47 @@ export default {
           800: "#11141d",
           700: "#1a1e2c",
         },
-        gold: {
-          400: "#d4b66a",
-          500: "#c9a14a",
-          600: "#a3822f",
-        },
-        accent: {
-          400: "#7dd3fc",
-          500: "#38bdf8",
+        // Soothing soft sky-blue accent (replaces previous gold)
+        azure: {
+          300: "#a9cdf0",
+          400: "#7daed3",
+          500: "#5a8fbf",
+          600: "#3f72a3",
         },
       },
       fontFamily: {
-        display: ["'Fraunces'", "Georgia", "serif"],
-        sans: ["'Inter'", "ui-sans-serif", "system-ui", "sans-serif"],
+        // Apple San Francisco UI font, falling back gracefully
+        sans: [
+          "-apple-system",
+          "BlinkMacSystemFont",
+          '"SF Pro Display"',
+          '"SF Pro Text"',
+          '"SF Pro"',
+          '"Helvetica Neue"',
+          "Inter",
+          "system-ui",
+          "Segoe UI",
+          "Arial",
+          "sans-serif",
+        ],
+        display: [
+          "-apple-system",
+          "BlinkMacSystemFont",
+          '"SF Pro Display"',
+          '"SF Pro"',
+          '"Helvetica Neue"',
+          "Inter",
+          "system-ui",
+          "sans-serif",
+        ],
       },
       boxShadow: {
-        glow: "0 0 60px -10px rgba(201,161,74,0.45)",
+        glow: "0 0 60px -10px rgba(125,174,211,0.45)",
         soft: "0 30px 80px -30px rgba(0,0,0,0.6)",
       },
       backgroundImage: {
         "radial-fade":
-          "radial-gradient(ellipse at top, rgba(201,161,74,0.18), transparent 60%)",
+          "radial-gradient(ellipse at top, rgba(125,174,211,0.18), transparent 60%)",
       },
     },
   },

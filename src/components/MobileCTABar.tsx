@@ -15,7 +15,7 @@ export default function MobileCTABar() {
       </a>
       <Link
         to="/contact"
-        className="flex-[1.6] inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-4 py-3 text-sm font-semibold text-ink-950 shadow-glow"
+        className="flex-[1.6] inline-flex items-center justify-center gap-2 rounded-full bg-azure-500 px-4 py-3 text-sm font-semibold text-ink-950 shadow-glow"
       >
         <MessageSquare size={15} /> Get a Free Quote
       </Link>

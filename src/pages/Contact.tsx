@@ -48,7 +48,7 @@ export default function Contact() {
           >
             <div className="eyebrow">Contact</div>
             <h1 className="mt-3 h-display text-5xl md:text-6xl lg:text-7xl">
-              Let's build your business <span className="text-gold-400 italic">online.</span>
+              Let's build your business <span className="text-azure-400 italic">online.</span>
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-white/70 text-lg">
               Tell me a little about what you do — I'll send back a free quote
@@ -70,7 +70,7 @@ export default function Contact() {
           >
             {submitted ? (
               <div className="py-10 text-center">
-                <div className="mx-auto w-14 h-14 rounded-full bg-gold-500/20 border border-gold-500/40 flex items-center justify-center text-gold-400">
+                <div className="mx-auto w-14 h-14 rounded-full bg-azure-500/20 border border-azure-500/40 flex items-center justify-center text-azure-400">
                   <Check size={26} />
                 </div>
                 <h3 className="mt-6 font-display text-3xl">Got it.</h3>
@@ -120,7 +120,7 @@ export default function Contact() {
                     <select
                       value={form.pkg}
                       onChange={(e) => update("pkg", e.target.value)}
-                      className="w-full appearance-none rounded-2xl border border-white/10 bg-white/5 px-4 py-3.5 text-white focus:outline-none focus:border-gold-500/50 focus:bg-white/[0.07] transition"
+                      className="w-full appearance-none rounded-2xl border border-white/10 bg-white/5 px-4 py-3.5 text-white focus:outline-none focus:border-azure-500/50 focus:bg-white/[0.07] transition"
                     >
                       {packages.map((p) => (
                         <option key={p} value={p} className="bg-ink-900 text-white">
@@ -140,7 +140,7 @@ export default function Contact() {
                     onChange={(e) => update("notes", e.target.value)}
                     rows={4}
                     placeholder="Tell me about your business, where you're at, and what you wish your website did."
-                    className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3.5 text-white placeholder:text-white/30 focus:outline-none focus:border-gold-500/50 focus:bg-white/[0.07] transition resize-none"
+                    className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3.5 text-white placeholder:text-white/30 focus:outline-none focus:border-azure-500/50 focus:bg-white/[0.07] transition resize-none"
                   />
                 </div>
 
@@ -164,42 +164,42 @@ export default function Contact() {
           >
             <a
               href="tel:+10000000000"
-              className="block glass-card p-6 hover:border-gold-500/40 transition"
+              className="block glass-card p-6 hover:border-azure-500/40 transition"
             >
-              <Phone className="text-gold-400" size={22} />
+              <Phone className="text-azure-400" size={22} />
               <div className="mt-4 font-display text-xl">Call or Text</div>
               <div className="mt-1 text-white/60 text-sm">
                 Fastest way to reach me. Real human, every time.
               </div>
-              <div className="mt-3 text-gold-400 font-medium text-sm">
+              <div className="mt-3 text-azure-400 font-medium text-sm">
                 (555) 010-0420 →
               </div>
             </a>
 
             <a
               href="mailto:hello@youssef.studio"
-              className="block glass-card p-6 hover:border-gold-500/40 transition"
+              className="block glass-card p-6 hover:border-azure-500/40 transition"
             >
-              <Mail className="text-gold-400" size={22} />
+              <Mail className="text-azure-400" size={22} />
               <div className="mt-4 font-display text-xl">Email</div>
               <div className="mt-1 text-white/60 text-sm">
                 For longer messages or attachments.
               </div>
-              <div className="mt-3 text-gold-400 font-medium text-sm">
+              <div className="mt-3 text-azure-400 font-medium text-sm">
                 hello@youssef.studio →
               </div>
             </a>
 
             <a
               href="sms:+10000000000"
-              className="block glass-card p-6 hover:border-gold-500/40 transition"
+              className="block glass-card p-6 hover:border-azure-500/40 transition"
             >
-              <MessageSquare className="text-gold-400" size={22} />
+              <MessageSquare className="text-azure-400" size={22} />
               <div className="mt-4 font-display text-xl">Text Now</div>
               <div className="mt-1 text-white/60 text-sm">
                 Drop me a line — I'll get back same day.
               </div>
-              <div className="mt-3 text-gold-400 font-medium text-sm">
+              <div className="mt-3 text-azure-400 font-medium text-sm">
                 Open SMS →
               </div>
             </a>
@@ -242,7 +242,7 @@ function Field({
         value={value}
         required={required}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3.5 text-white placeholder:text-white/30 focus:outline-none focus:border-gold-500/50 focus:bg-white/[0.07] transition"
+        className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3.5 text-white placeholder:text-white/30 focus:outline-none focus:border-azure-500/50 focus:bg-white/[0.07] transition"
       />
     </div>
   );

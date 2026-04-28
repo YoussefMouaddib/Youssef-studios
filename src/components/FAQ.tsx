@@ -35,7 +35,7 @@ export default function FAQ() {
           <div
             key={it.q}
             className={`glass-card overflow-hidden transition-colors ${
-              isOpen ? "border-gold-500/30" : ""
+              isOpen ? "border-azure-500/30" : ""
             }`}
           >
             <button
@@ -47,7 +47,7 @@ export default function FAQ() {
                 animate={{ rotate: isOpen ? 45 : 0 }}
                 transition={{ duration: 0.3 }}
                 className={`shrink-0 w-9 h-9 rounded-full flex items-center justify-center border ${
-                  isOpen ? "border-gold-500/50 bg-gold-500/10 text-gold-400" : "border-white/10 text-white/60"
+                  isOpen ? "border-azure-500/50 bg-azure-500/10 text-azure-400" : "border-white/10 text-white/60"
                 }`}
               >
                 <Plus size={16} />

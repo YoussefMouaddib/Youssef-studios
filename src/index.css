@@ -16,8 +16,12 @@ body,
 body {
   @apply font-sans text-white antialiased;
   background:
-    radial-gradient(ellipse at top, rgba(201, 161, 74, 0.08), transparent 60%),
+    radial-gradient(ellipse at top, rgba(125, 174, 211, 0.08), transparent 60%),
     #05060a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "cv11";
+  letter-spacing: -0.011em;
 }
 
 html {
@@ -25,7 +29,7 @@ html {
 }
 
 ::selection {
-  background: rgba(201, 161, 74, 0.35);
+  background: rgba(125, 174, 211, 0.35);
   color: white;
 }
 
@@ -47,7 +51,7 @@ html {
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-6 py-3 text-sm font-semibold tracking-wide text-ink-950 shadow-glow transition-all hover:bg-gold-400 hover:scale-[1.02] active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-azure-500 px-6 py-3 text-sm font-semibold tracking-wide text-white shadow-glow transition-all hover:bg-azure-400 hover:scale-[1.02] active:scale-[0.98];
   }
   .btn-ghost {
     @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold tracking-wide text-white backdrop-blur-md transition-all hover:bg-white/10 hover:border-white/25;
@@ -56,9 +60,9 @@ html {
     @apply rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl shadow-soft;
   }
   .eyebrow {
-    @apply text-xs uppercase tracking-[0.3em] text-gold-400 font-medium;
+    @apply text-xs uppercase tracking-[0.3em] text-azure-400 font-medium;
   }
   .h-display {
-    @apply font-display font-light leading-[1.05] tracking-tight;
+    @apply font-display font-semibold leading-[1.05] tracking-[-0.025em];
   }
 }

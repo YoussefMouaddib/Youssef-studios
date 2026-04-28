@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
-  Sparkles,
   TrendingUp,
   Award,
   Calendar,
@@ -59,36 +58,21 @@ export default function Home() {
           <motion.div
             initial="hidden"
             animate="show"
-            className="max-w-3xl"
+            className="max-w-4xl mx-auto text-center"
           >
-            <motion.div variants={fadeUp} custom={0} className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 backdrop-blur-md px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-white/80">
-              <Sparkles size={13} className="text-gold-400" />
-              Premium websites · starting at $100
-            </motion.div>
-
             <motion.h1
               variants={fadeUp}
-              custom={1}
-              className="mt-6 h-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem]"
+              custom={0}
+              className="h-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem]"
             >
               Make your dream website
-              <span className="block text-gold-400 italic font-normal"> a reality.</span>
+              <span className="block text-azure-400 font-normal"> a reality.</span>
             </motion.h1>
-
-            <motion.p
-              variants={fadeUp}
-              custom={2}
-              className="mt-6 text-lg md:text-xl text-white/75 max-w-xl leading-relaxed"
-            >
-              Professional websites, booking systems, and AI automations for
-              small businesses — engineered to convert visitors into paying
-              customers.
-            </motion.p>
 
             <motion.div
               variants={fadeUp}
-              custom={3}
-              className="mt-10 flex flex-col sm:flex-row gap-3"
+              custom={1}
+              className="mt-12 flex flex-col sm:flex-row gap-3 justify-center"
             >
               <Link to="/pricing" className="btn-primary">
                 View Packages <ArrowRight size={16} />
@@ -100,8 +84,8 @@ export default function Home() {
 
             <motion.div
               variants={fadeUp}
-              custom={4}
-              className="mt-14 grid grid-cols-3 gap-6 md:gap-10 max-w-xl"
+              custom={2}
+              className="mt-16 grid grid-cols-3 gap-6 md:gap-10 max-w-xl mx-auto"
             >
               <Stat label="Sites built" value={47} suffix="+" />
               <Stat label="Avg. response" value={2} suffix="h" />
@@ -138,7 +122,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="glass-card p-7"
             >
-              <r.icon className="text-gold-400" size={26} />
+              <r.icon className="text-azure-400" size={26} />
               <h3 className="mt-5 text-xl font-display tracking-tight">{r.title}</h3>
               <p className="mt-3 text-white/65 leading-relaxed text-[15px]">{r.body}</p>
             </motion.div>
@@ -159,7 +143,7 @@ export default function Home() {
             >
               <div className="eyebrow">Why work with Youssef</div>
               <h2 className="mt-3 h-display text-4xl md:text-5xl">
-                Big-agency quality. <span className="text-gold-400">Personal touch.</span>
+                Big-agency quality. <span className="text-azure-400">Personal touch.</span>
               </h2>
               <p className="mt-5 text-white/70 leading-relaxed text-lg max-w-lg">
                 You're not handed off to a junior. I design, code, and launch
@@ -174,7 +158,7 @@ export default function Home() {
                   "Real automations: booking, follow-ups, review requests.",
                 ].map((t) => (
                   <li key={t} className="flex gap-3">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-400" />
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-azure-400" />
                     <span>{t}</span>
                   </li>
                 ))}
@@ -191,7 +175,7 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="glass-card p-8 md:p-10"
             >
-              <div className="font-display text-5xl text-gold-400">100%</div>
+              <div className="font-display text-5xl text-azure-400">100%</div>
               <p className="mt-2 text-white/70">
                 Of clients are still online a year later. Most have referred at
                 least one new customer.
@@ -235,8 +219,8 @@ export default function Home() {
               transition={{ duration: 0.6, delay: i * 0.08 }}
               className="group relative glass-card p-7 overflow-hidden"
             >
-              <div className="absolute -top-10 -right-10 w-32 h-32 rounded-full bg-gold-500/10 blur-2xl group-hover:bg-gold-500/20 transition-all" />
-              <b.icon className="text-gold-400 relative" size={26} />
+              <div className="absolute -top-10 -right-10 w-32 h-32 rounded-full bg-azure-500/10 blur-2xl group-hover:bg-azure-500/20 transition-all" />
+              <b.icon className="text-azure-400 relative" size={26} />
               <h3 className="mt-5 text-lg font-semibold relative">{b.title}</h3>
               <p className="mt-2 text-white/60 text-sm leading-relaxed relative">{b.body}</p>
             </motion.div>
@@ -266,7 +250,7 @@ export default function Home() {
             transition={{ duration: 0.7 }}
             className="h-display text-4xl md:text-6xl"
           >
-            Ready to look like the <span className="text-gold-400 italic">real deal?</span>
+            Ready to look like the <span className="text-azure-400 italic">real deal?</span>
           </motion.h2>
           <p className="mt-6 text-white/75 text-lg">
             Free quote. Honest timeline. No pressure.
