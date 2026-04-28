@@ -1,0 +1,170 @@
+Build me a modern, premium-looking front-end small business website (React + Tailwind preferred) for my web design/automation service. The goal is to make me look like a serious professional developer and help convert local business owners into leads.
+
+General Style
+Clean luxury startup aesthetic (Apple meets creative agency)
+Dark theme with elegant contrast
+Smooth animations and transitions (Framer Motion)
+Responsive on mobile and desktop
+Rounded cards, soft shadows, subtle glow effects
+Sticky navbar
+Smooth scrolling
+Fast-loading and lightweight
+Important
+
+I will provide a background hero video file for the homepage. Use it as a full-screen cinematic hero background:
+
+Autoplay
+Muted
+Loop
+Plays inline
+Cover full viewport
+Add dark overlay for text readability
+Add fallback image if video fails
+Optimize loading performance
+Optional slow zoom/parallax effect for premium feel
+
+Make it easy for me to replace the video file later.
+
+Website Structure (5 Pages)
+1. Home Page
+
+Use the background video as the centerpiece.
+
+Hero headline:
+Make Your Dream Website a Reality… Starting at $100
+
+Subheadline:
+Professional websites, booking systems, and AI automations for small businesses.
+
+Buttons:
+
+View Packages
+Get a Free Quote
+
+Add smooth animated entrance effects for text.
+
+Sections below hero:
+
+Why businesses need websites
+Why work with Youssef
+Benefits grid:
+More leads
+Look professional
+Get booked online
+Automate follow-ups
+
+Make the homepage feel like a premium agency site.
+
+2. Pricing / Services Page
+
+Create three premium pricing cards:
+
+$100 Basic Business Website
+
+Includes:
+
+Professional custom website
+Mobile-friendly design
+Contact form
+Call now button
+Email lead capture
+Designed to drive visitors to phone or email
+$150 Website + Booking System
+
+Includes everything above plus:
+
+Online booking system
+Coordinated owner dashboard
+Appointment management
+Basic system setup
+$200 Website + AI Automation Package
+
+Includes everything above plus:
+
+Automated text follow-ups
+Email automation
+Review request automation
+Cold lead reactivation
+AI-powered customer communication flows
+
+Mark this package as Most Popular.
+
+Each card should have:
+
+Get Started button
+3. Reviews Page
+
+Create a reviews section styled like professional business reviews.
+
+Show 3 testimonial cards:
+
+Mike R. — Barber Shop Owner
+
+Purchased website + booking package.
+
+Review says bookings increased, site looks premium, and praises Youssef’s responsiveness and maintenance.
+
+Carlos M. — Junk Removal
+
+Purchased basic website.
+
+Review says website brought in more calls and made business look trustworthy.
+
+David P. — Exterminator
+
+Purchased AI automation package.
+
+Review says automated follow-ups helped close missed leads and praises Youssef’s accessibility and support.
+
+Show star ratings and clean trust-building visuals.
+
+4. Portfolio / Sample Sites Page
+
+Show mock business demos:
+
+Barber website demo
+Junk removal website demo
+Exterminator website demo
+
+Use mock browser preview cards.
+
+Add section:
+Websites Built to Convert Visitors Into Customers
+
+5. Contact Page
+
+Lead form:
+
+Name
+Business Name
+Phone
+Email
+Which package interests you
+
+Also include:
+
+Call/Text button
+Email button
+
+Headline:
+Let’s Build Your Business Online
+
+Features to Include
+Smooth page transitions
+Scroll-triggered animations
+Animated counters (websites built, response time, leads generated)
+FAQ accordion
+Floating “Get Quote” button
+Sticky mobile CTA bar
+Technical Requirements
+React
+Tailwind CSS
+Framer Motion
+Component-based clean code
+Easy for me to edit text and pricing
+Easy for me to replace hero video file
+Use placeholder content where needed
+Make it feel like a real agency website ready to launch
+Goal
+
+Build this as a polished website that makes clients believe I build premium websites, booking systems, and automation solutions for small businesses. It should look trustworthy, expensive, and conversion-focused.

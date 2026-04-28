@@ -1,27 +1,65 @@
-# Workspace
+# Youssef Studio Website
 
-## Overview
-
-pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
+Premium dark-themed agency website for selling small business websites, booking systems, and AI automation packages.
 
 ## Stack
 
-- **Monorepo tool**: pnpm workspaces
-- **Node.js version**: 24
-- **Package manager**: pnpm
-- **TypeScript version**: 5.9
-- **API framework**: Express 5
-- **Database**: PostgreSQL + Drizzle ORM
-- **Validation**: Zod (`zod/v4`), `drizzle-zod`
-- **API codegen**: Orval (from OpenAPI spec)
-- **Build**: esbuild (CJS bundle)
+- React 18 + TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion (animations)
+- React Router (5 pages)
+- Lucide icons
 
-## Key Commands
+## Structure
 
-- `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- `pnpm --filter @workspace/api-server run dev` — run API server locally
+```
+/
+├─ index.html
+├─ vite.config.ts
+├─ tailwind.config.js
+├─ vercel.json              # Vercel deployment config
+├─ public/
+│  └─ hero.mp4              # Hero background video — replace this file to swap globally
+└─ src/
+   ├─ main.tsx
+   ├─ App.tsx               # Router + page transitions
+   ├─ index.css
+   ├─ components/
+   │  ├─ Navbar.tsx
+   │  ├─ Footer.tsx
+   │  ├─ VideoBackground.tsx  # Reusable cinematic video bg
+   │  ├─ FloatingCTA.tsx
+   │  ├─ MobileCTABar.tsx
+   │  ├─ Counter.tsx
+   │  └─ FAQ.tsx
+   └─ pages/
+      ├─ Home.tsx
+      ├─ Pricing.tsx
+      ├─ Reviews.tsx
+      ├─ Portfolio.tsx
+      └─ Contact.tsx
+```
 
-See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+## How to Replace the Hero Video
+
+Drop a new `.mp4` at `public/hero.mp4` (same name) and redeploy. To use a different filename, pass `src="/your-file.mp4"` to `<VideoBackground>`.
+
+## How to Edit Pricing / Copy
+
+- Pricing tiers: `src/pages/Pricing.tsx` (`tiers` array near the top)
+- Reviews: `src/pages/Reviews.tsx` (`reviews` array)
+- Portfolio entries: `src/pages/Portfolio.tsx` (`works` array)
+- FAQ: `src/components/FAQ.tsx`
+- Contact info: `src/components/Footer.tsx`, `src/pages/Contact.tsx`
+
+## Local Dev
+
+```bash
+npm install
+npm run dev
+```
+
+## Deploy to Vercel
+
+The repo root is the build root. Push to GitHub and import in Vercel — `vercel.json` is preconfigured for Vite + SPA routing. No extra setup required.
