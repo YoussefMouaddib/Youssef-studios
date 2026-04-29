@@ -25,10 +25,10 @@ export default function Contact() {
     e.preventDefault();
     // Mailto fallback so the lead doesn't get lost on a static deploy
     const body = encodeURIComponent(
-      `Name: ${form.name}\nBusiness: ${form.business}\nPhone: ${form.phone}\nEmail: ${form.email}\nPackage: ${form.pkg}\n\nNotes:\n${form.notes}`
+      `Name: ${form.name}\nBusiness: ${form.business}\nPhone: ${form.phone}\nEmail: ${form.email}\nPackage: ${form.pkg}\n\nNotes:\n${form.notes}`,
     );
     window.location.href = `mailto:hello@youssef.studio?subject=${encodeURIComponent(
-      "New project inquiry — " + form.name
+      "New project inquiry — " + form.name,
     )}&body=${body}`;
     setSubmitted(true);
   };
@@ -48,7 +48,8 @@ export default function Contact() {
           >
             <div className="eyebrow">Contact</div>
             <h1 className="mt-3 h-display text-5xl md:text-6xl lg:text-7xl">
-              Let's build your business <span className="text-azure-400 italic">online.</span>
+              Let's build your business{" "}
+              <span className="text-azure-400 italic">online.</span>
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-white/70 text-lg">
               Tell me a little about what you do — I'll send back a free quote
@@ -123,7 +124,11 @@ export default function Contact() {
                       className="w-full appearance-none rounded-2xl border border-white/10 bg-white/5 px-4 py-3.5 text-white focus:outline-none focus:border-azure-500/50 focus:bg-white/[0.07] transition"
                     >
                       {packages.map((p) => (
-                        <option key={p} value={p} className="bg-ink-900 text-white">
+                        <option
+                          key={p}
+                          value={p}
+                          className="bg-ink-900 text-white"
+                        >
                           {p}
                         </option>
                       ))}
@@ -133,7 +138,10 @@ export default function Contact() {
 
                 <div>
                   <label className="block text-xs uppercase tracking-[0.2em] text-white/55 mb-2">
-                    Anything else? <span className="normal-case tracking-normal text-white/35">(optional)</span>
+                    Anything else?{" "}
+                    <span className="normal-case tracking-normal text-white/35">
+                      (optional)
+                    </span>
                   </label>
                   <textarea
                     value={form.notes}
@@ -172,12 +180,12 @@ export default function Contact() {
                 Fastest way to reach me. Real human, every time.
               </div>
               <div className="mt-3 text-azure-400 font-medium text-sm">
-                (555) 010-0420 →
+                (373) 206-6031 →
               </div>
             </a>
 
             <a
-              href="mailto:hello@youssef.studio"
+              href="mailto:youssefmouaddib11@gmail.com"
               className="block glass-card p-6 hover:border-azure-500/40 transition"
             >
               <Mail className="text-azure-400" size={22} />
@@ -186,7 +194,7 @@ export default function Contact() {
                 For longer messages or attachments.
               </div>
               <div className="mt-3 text-azure-400 font-medium text-sm">
-                hello@youssef.studio →
+                youssefmouaddib11@gmail.com →
               </div>
             </a>
 
@@ -207,9 +215,18 @@ export default function Contact() {
             <div className="glass-card p-6">
               <div className="eyebrow">Hours</div>
               <div className="mt-3 text-sm text-white/70 space-y-1">
-                <div className="flex justify-between"><span>Mon – Fri</span><span>9am – 8pm</span></div>
-                <div className="flex justify-between"><span>Sat</span><span>10am – 4pm</span></div>
-                <div className="flex justify-between"><span>Sun</span><span>By appointment</span></div>
+                <div className="flex justify-between">
+                  <span>Mon – Fri</span>
+                  <span>9am – 8pm</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Sat</span>
+                  <span>10am – 4pm</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Sun</span>
+                  <span>By appointment</span>
+                </div>
               </div>
             </div>
           </motion.aside>

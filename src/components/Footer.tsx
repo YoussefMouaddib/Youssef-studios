@@ -29,11 +29,31 @@ export default function Footer() {
         <div>
           <div className="eyebrow mb-4">Explore</div>
           <ul className="space-y-2.5 text-sm">
-            <li><Link to="/" className="text-white/70 hover:text-white">Home</Link></li>
-            <li><Link to="/pricing" className="text-white/70 hover:text-white">Pricing</Link></li>
-            <li><Link to="/portfolio" className="text-white/70 hover:text-white">Portfolio</Link></li>
-            <li><Link to="/reviews" className="text-white/70 hover:text-white">Reviews</Link></li>
-            <li><Link to="/contact" className="text-white/70 hover:text-white">Contact</Link></li>
+            <li>
+              <Link to="/" className="text-white/70 hover:text-white">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/pricing" className="text-white/70 hover:text-white">
+                Pricing
+              </Link>
+            </li>
+            <li>
+              <Link to="/portfolio" className="text-white/70 hover:text-white">
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link to="/reviews" className="text-white/70 hover:text-white">
+                Reviews
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="text-white/70 hover:text-white">
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -41,13 +61,20 @@ export default function Footer() {
           <div className="eyebrow mb-4">Get in Touch</div>
           <ul className="space-y-3 text-sm">
             <li>
-              <a href="tel:+10000000000" className="inline-flex items-center gap-2 text-white/70 hover:text-white">
-                <Phone size={14} className="text-azure-400" /> Call or text
+              <a
+                href="tel:+13732066031"
+                className="inline-flex items-center gap-2 text-white/70 hover:text-white"
+              >
+                <Phone size={14} className="text-azure-400" /> (373) 206-6031
               </a>
             </li>
             <li>
-              <a href="mailto:hello@youssef.studio" className="inline-flex items-center gap-2 text-white/70 hover:text-white">
-                <Mail size={14} className="text-azure-400" /> hello@youssef.studio
+              <a
+                href="mailto:youssefmouaddib11@gmail.com"
+                className="inline-flex items-center gap-2 text-white/70 hover:text-white"
+              >
+                <Mail size={14} className="text-azure-400" />{" "}
+                youssefmouaddib11@gmail.com
               </a>
             </li>
           </ul>
@@ -55,7 +82,9 @@ export default function Footer() {
       </div>
       <div className="border-t border-white/5">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6 flex flex-col md:flex-row justify-between gap-3 text-xs text-white/40">
-          <div>© {new Date().getFullYear()} Youssef Studio. All rights reserved.</div>
+          <div>
+            © {new Date().getFullYear()} Youssef Studio. All rights reserved.
+          </div>
           <div>Designed & built in-house. Premium results, plain English.</div>
         </div>
       </div>

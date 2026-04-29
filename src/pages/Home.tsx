@@ -33,10 +33,26 @@ const reasons = [
 ];
 
 const benefits = [
-  { icon: TrendingUp, title: "More leads", body: "Capture phone calls, emails, and bookings from every visitor." },
-  { icon: Award, title: "Look professional", body: "A premium presence that justifies your prices." },
-  { icon: Calendar, title: "Get booked online", body: "Customers schedule themselves. No phone tag." },
-  { icon: Bot, title: "Automate follow-ups", body: "AI texts, emails, and review requests on autopilot." },
+  {
+    icon: TrendingUp,
+    title: "More leads",
+    body: "Capture phone calls, emails, and bookings from every visitor.",
+  },
+  {
+    icon: Award,
+    title: "Look professional",
+    body: "A premium presence that justifies your prices.",
+  },
+  {
+    icon: Calendar,
+    title: "Get booked online",
+    body: "Customers schedule themselves. No phone tag.",
+  },
+  {
+    icon: Bot,
+    title: "Automate follow-ups",
+    body: "AI texts, emails, and review requests on autopilot.",
+  },
 ];
 
 const fadeUp = {
@@ -66,7 +82,7 @@ export default function Home() {
               className="h-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem]"
             >
               Make your dream website
-              <span className="block text-azure-400 font-normal"> a reality.</span>
+              <span className="text-azure-400 italic"> a reality.</span>
             </motion.h1>
 
             <motion.div
@@ -119,12 +135,20 @@ export default function Home() {
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.6, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+              transition={{
+                duration: 0.6,
+                delay: i * 0.1,
+                ease: [0.22, 1, 0.36, 1],
+              }}
               className="glass-card p-7"
             >
               <r.icon className="text-azure-400" size={26} />
-              <h3 className="mt-5 text-xl font-display tracking-tight">{r.title}</h3>
-              <p className="mt-3 text-white/65 leading-relaxed text-[15px]">{r.body}</p>
+              <h3 className="mt-5 text-xl font-display tracking-tight">
+                {r.title}
+              </h3>
+              <p className="mt-3 text-white/65 leading-relaxed text-[15px]">
+                {r.body}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -143,7 +167,8 @@ export default function Home() {
             >
               <div className="eyebrow">Why work with Youssef</div>
               <h2 className="mt-3 h-display text-4xl md:text-5xl">
-                Big-agency quality. <span className="text-azure-400">Personal touch.</span>
+                Big-agency quality.{" "}
+                <span className="text-azure-400">Personal touch.</span>
               </h2>
               <p className="mt-5 text-white/70 leading-relaxed text-lg max-w-lg">
                 You're not handed off to a junior. I design, code, and launch
@@ -183,19 +208,27 @@ export default function Home() {
               <div className="mt-8 grid grid-cols-2 gap-6">
                 <div>
                   <div className="font-display text-3xl">7d</div>
-                  <div className="text-xs uppercase tracking-[0.2em] text-white/55 mt-1">Avg. launch time</div>
+                  <div className="text-xs uppercase tracking-[0.2em] text-white/55 mt-1">
+                    Avg. launch time
+                  </div>
                 </div>
                 <div>
                   <div className="font-display text-3xl">$0</div>
-                  <div className="text-xs uppercase tracking-[0.2em] text-white/55 mt-1">Hidden fees</div>
+                  <div className="text-xs uppercase tracking-[0.2em] text-white/55 mt-1">
+                    Hidden fees
+                  </div>
                 </div>
                 <div>
                   <div className="font-display text-3xl">∞</div>
-                  <div className="text-xs uppercase tracking-[0.2em] text-white/55 mt-1">Edits in month one</div>
+                  <div className="text-xs uppercase tracking-[0.2em] text-white/55 mt-1">
+                    Edits in month one
+                  </div>
                 </div>
                 <div>
                   <div className="font-display text-3xl">5★</div>
-                  <div className="text-xs uppercase tracking-[0.2em] text-white/55 mt-1">Average review</div>
+                  <div className="text-xs uppercase tracking-[0.2em] text-white/55 mt-1">
+                    Average review
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -222,7 +255,9 @@ export default function Home() {
               <div className="absolute -top-10 -right-10 w-32 h-32 rounded-full bg-azure-500/10 blur-2xl group-hover:bg-azure-500/20 transition-all" />
               <b.icon className="text-azure-400 relative" size={26} />
               <h3 className="mt-5 text-lg font-semibold relative">{b.title}</h3>
-              <p className="mt-2 text-white/60 text-sm leading-relaxed relative">{b.body}</p>
+              <p className="mt-2 text-white/60 text-sm leading-relaxed relative">
+                {b.body}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -250,14 +285,19 @@ export default function Home() {
             transition={{ duration: 0.7 }}
             className="h-display text-4xl md:text-6xl"
           >
-            Ready to look like the <span className="text-azure-400 italic">real deal?</span>
+            Ready to look like the{" "}
+            <span className="text-azure-400 italic">real deal?</span>
           </motion.h2>
           <p className="mt-6 text-white/75 text-lg">
             Free quote. Honest timeline. No pressure.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-3">
-            <Link to="/contact" className="btn-primary">Get a Free Quote <ArrowRight size={16} /></Link>
-            <Link to="/portfolio" className="btn-ghost">See my work</Link>
+            <Link to="/contact" className="btn-primary">
+              Get a Free Quote <ArrowRight size={16} />
+            </Link>
+            <Link to="/portfolio" className="btn-ghost">
+              See my work
+            </Link>
           </div>
         </div>
       </section>
@@ -288,7 +328,11 @@ function Section({
         >
           <div className="eyebrow">{eyebrow}</div>
           <h2 className="mt-3 h-display text-4xl md:text-5xl">{title}</h2>
-          {intro && <p className="mt-4 text-white/65 text-lg leading-relaxed">{intro}</p>}
+          {intro && (
+            <p className="mt-4 text-white/65 text-lg leading-relaxed">
+              {intro}
+            </p>
+          )}
         </motion.div>
         {children}
       </div>
@@ -296,7 +340,15 @@ function Section({
   );
 }
 
-function Stat({ label, value, suffix }: { label: string; value: number; suffix?: string }) {
+function Stat({
+  label,
+  value,
+  suffix,
+}: {
+  label: string;
+  value: number;
+  suffix?: string;
+}) {
   return (
     <div>
       <div className="font-display text-4xl md:text-5xl text-white">
