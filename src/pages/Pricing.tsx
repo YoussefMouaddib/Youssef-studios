@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Check, ArrowRight, Sparkles } from "lucide-react";
 import VideoBackground from "../components/VideoBackground";
-
+ 
+// TODO: replace each paymentLink below with the real URL from your
+// Stripe Dashboard -> Payment Links -> New (one per package).
 const tiers = [
   {
     name: "Basic Business Website",
@@ -16,8 +18,9 @@ const tiers = [
       "Email lead capture",
       "Designed to drive calls & emails",
     ],
-    cta: "Get Started",
+    cta: "Book This Package",
     popular: false,
+    paymentLink: "https://buy.stripe.com/REPLACE_BASIC",
   },
   {
     name: "Website + Booking System",
@@ -31,8 +34,9 @@ const tiers = [
       "Basic system setup & training",
       "Calendar sync",
     ],
-    cta: "Get Started",
+    cta: "Book This Package",
     popular: true,
+    paymentLink: "https://buy.stripe.com/REPLACE_BOOKING",
   },
   {
     name: "Website + AI Automation",
@@ -46,11 +50,12 @@ const tiers = [
       "Cold lead reactivation",
       "AI-powered customer comms",
     ],
-    cta: "Get Started",
+    cta: "Book This Package",
     popular: false,
+    paymentLink: "https://buy.stripe.com/REPLACE_AUTOMATION",
   },
 ];
-
+ 
 export default function Pricing() {
   return (
     <>
@@ -74,7 +79,7 @@ export default function Pricing() {
           </motion.div>
         </div>
       </section>
-
+ 
       {/* TIERS */}
       <section className="relative py-12 md:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
@@ -107,7 +112,7 @@ export default function Pricing() {
                   <span className="text-white/50 text-sm ml-1">one-time</span>
                 </div>
                 <p className="mt-3 text-white/60 text-sm leading-relaxed">{t.blurb}</p>
-
+ 
                 <ul className="mt-8 space-y-3 flex-1">
                   {t.features.map((f) => (
                     <li key={f} className="flex gap-3 text-sm">
@@ -122,17 +127,19 @@ export default function Pricing() {
                     </li>
                   ))}
                 </ul>
-
-                <Link
-                  to="/contact"
+ 
+                <a
+                  href={t.paymentLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`mt-10 ${t.popular ? "btn-primary" : "btn-ghost"} w-full`}
                 >
                   {t.cta} <ArrowRight size={16} />
-                </Link>
+                </a>
               </motion.div>
             ))}
           </div>
-
+ 
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -144,7 +151,7 @@ export default function Pricing() {
           </motion.div>
         </div>
       </section>
-
+ 
       {/* COMPARISON / TRUST STRIP */}
       <section className="relative py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
